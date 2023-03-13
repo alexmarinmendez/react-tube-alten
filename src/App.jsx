@@ -1,12 +1,13 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Videos from './containers/Videos';
+import SearchArea from './components/SearchArea';
+import { data } from './utils/mock';
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Videos />
+      <SearchArea videos={data} />
     </>
   );
 };
